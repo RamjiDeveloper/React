@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+
+}
+.btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+button{
+  padding: 10px 50px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: #f3f3f3;
+}
+
+.scroll-content {
+  display: inline-flex;
+  animation: scroll 15s linear infinite;
+}
+
+/* 🔥 Hover karne par animation pause */
+.scroll-content:hover {
+  animation-play-state: paused;
+}
+
+.item {
+  padding: 20px;
+  margin-right: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
