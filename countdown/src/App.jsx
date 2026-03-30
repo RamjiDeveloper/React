@@ -1,6 +1,7 @@
 import React from 'react'
-import { useEffect } from 'react';
-import { useState } from 'react'
+
+// import { useEffect } from 'react';
+// import { useState } from 'react'
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
       <button onClick={handleReset}>Reset</button>
       </div>
     </div>
+
   )
 }
 
