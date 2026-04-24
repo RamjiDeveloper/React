@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+@keyframes copyAnim {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10px) rotate(-10deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -5px) rotate(5deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -20px) rotate(0deg);
+  }
+}
+
+.animate-copy {
+  animation: copyAnim 1.5s ease-in-out;
+}
